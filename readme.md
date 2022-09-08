@@ -1,5 +1,9 @@
 # Station!
 
+Live website: https://station-team.netlify.app
+
+For more info visit the discord server on the website.
+
 This is a very basic readme file, written in Markdown.
 
 We need to create an issue to improve it!
