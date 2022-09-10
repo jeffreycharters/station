@@ -6,6 +6,7 @@ See it live: https://station-team.netlify.app
 
 
 
+
 ## What is this?
 
 Many self-taught developers learn to code by themselves by reading or watching tutorials and coding along with them. Eventually they will probably strike out and create a few projects.
@@ -28,11 +29,13 @@ We're all learning here and like many things in the coding world, you learn best
 
 
 
+
 ## Getting Started
 
 There can be a lot to learn when getting involved in open-source projects if you've never done it before. If you already know some HTML, you should be able to get started here by learning a little bit about Git and Github. Git is version control software, if you do a web search you should find a lot of resources to get you started.
 
 Do you already know about these things? One of your contributors found [this handy guide](https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/) to get you started with forking a repository and creating a pull request. If you are comfortable reading documentation, Github's is pretty accessible and they have a good section on [working collaboratively](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models) that is worth a read.
+
 
 
 
@@ -53,6 +56,7 @@ The following people are willing to help you via Twitter as well:
 
 
 👆 Feel free to add your info here and create a Pull Request to get added!
+
 
 
 
