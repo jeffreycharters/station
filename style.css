@@ -1,3 +1,20 @@
+html{
+  font-size: 62%;
+}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+ max-width: 90%;
+  margin: auto;
+  /*border: 0.1vh solid paleturquoise;*/
+  text-align: center;
+  font-size: 2rem;
+}
+@media screen and (max-width:480px) 
+{
+  .container{
+    max-width: 100%;
+  }
+  
 }
