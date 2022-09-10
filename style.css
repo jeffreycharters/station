@@ -7,7 +7,7 @@ body {
 .container{
  max-width: 90%;
   margin: auto;
-  border: 0.1vh solid paleturquoise;
+  /*border: 0.1vh solid paleturquoise;*/
   text-align: center;
   font-size: 2rem;
 }
