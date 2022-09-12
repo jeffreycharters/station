@@ -11,10 +11,16 @@ body {
   text-align: center;
   font-size: 2rem;
 }
+
 @media screen and (max-width:480px) 
+
+.embed {
+  height: 360px;
+  width: 480px;
+}
+
 {
   .container{
     max-width: 100%;
   }
-  
 }
