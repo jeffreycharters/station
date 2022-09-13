@@ -13,14 +13,48 @@ body {
 }
 
 @media screen and (max-width:480px) 
-
+/* 
 .embed {
   height: 360px;
   width: 480px;
-}
+} */
 
 {
   .container{
     max-width: 100%;
   }
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  
+}
+
+li {
+  counter-increment: my-awesome-counter;
+  margin: 0.25rem;
+  
+}
+li::before {
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+ol ol li::before {
+  background: #DE51FF;
+}
+ol ol ol li::before {
+  background: #EE9EFF;
+}
+
+body {
+  font-family: 'PT Serif', serif;
 }
