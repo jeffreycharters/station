@@ -66,7 +66,7 @@ body {
 
 .hero-section {
   /* position: relative; */
-  width: 80vw; 
+  /* width: 80vw;  */
   height: 100vh; 
   display: flex;
   justify-content: center;
@@ -90,7 +90,7 @@ body {
 .hero-content {
   position: relative;
   color: white;
-  margin: 10px;
+  margin: auto;
 }
 
 .hero-title {
@@ -110,11 +110,12 @@ body {
   color: black;
   border: 2px solid #00e6e6;
   margin-top: 60px;
-  padding: 15px 30px;
+  padding: 15px 20px;
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
   border-radius: 8px;
+  text-align: left;
 }
 
 .hero-button:hover {
