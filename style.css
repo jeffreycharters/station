@@ -3,9 +3,11 @@ html{
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .container{
- max-width: 90%;
+  max-width: 90%;
   margin: auto;
   /*border: 0.1vh solid paleturquoise;*/
   text-align: center;
@@ -57,4 +59,64 @@ ol ol ol li::before {
 
 body {
   font-family: 'PT Serif', serif;
+}
+
+
+/* Hero styles */
+
+.hero-section {
+  /* position: relative; */
+  width: 80vw; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background: url(images/coding-photo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  margin: 10px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 16px;
+}
+
+.hero-button {
+  background-color: #00cccc;
+  color: black;
+  border: 2px solid #00e6e6;
+  margin-top: 60px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.hero-button:hover {
+  background-color: #00b3b3;
 }
