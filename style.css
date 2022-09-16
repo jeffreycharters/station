@@ -116,6 +116,7 @@ body {
   cursor: pointer;
   border-radius: 8px;
   text-align: left;
+  text-decoration: none;
 }
 
 .hero-button:hover {
