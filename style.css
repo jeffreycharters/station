@@ -103,21 +103,21 @@ body {
   font-size: 24px;
   font-weight: 200;
   margin-top: 16px;
+  margin-bottom: 60px;
 }
 
 .hero-button {
+  text-decoration: none;
   background-color: #00cccc;
   color: black;
-  border: 2px solid #00e6e6;
-  margin-top: 60px;
-  padding: 15px 20px;
-  font-size: 20px;
-  font-weight: 400;
-  cursor: pointer;
+  padding: 10px 20px;
   border-radius: 8px;
-  text-align: left;
-  text-decoration: none;
+  font-weight: 400;
+  border: 2px solid #00e6e6;
+  font-size: 20px;
 }
+
+
 
 .hero-button:hover {
   background-color: #00b3b3;
