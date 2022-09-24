@@ -14,6 +14,11 @@ body {
   font-size: 2rem;
 }
 
+#embed{
+  display: none;
+}
+}
+
 @media screen and (max-width: 480px) /* .embed { height: 360px; width: 480px; } */ {
   .container {
     max-width: 100%;
@@ -109,6 +114,13 @@ body {
 
 .hero-button:hover {
   background-color: #00b3b3;
+}
+
+#plus {
+  position: absolute;
+  right: 0px;
+  height: 65px;
+  width: 65px;
 }
 
 h2 {
