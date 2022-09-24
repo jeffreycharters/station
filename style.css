@@ -14,9 +14,8 @@ body {
   font-size: 2rem;
 }
 
-#embed{
+#embed {
   display: none;
-}
 }
 
 @media screen and (max-width: 480px) /* .embed { height: 360px; width: 480px; } */ {
