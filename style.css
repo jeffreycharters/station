@@ -81,6 +81,11 @@ body {
   filter: brightness(60%);
 }
 
+.hero-section:hover .hero-section::before {
+  filter: brightness(100%);
+  border: 1px solid red;
+}
+
 .hero-content {
   position: relative;
   color: white;
@@ -140,4 +145,60 @@ h2 {
   to {
     background-position: 200% center;
   }
+}
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  padding: 5px;
+
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.sun path,
+.sun polygon,
+.sun rect {
+  fill: #f6ca46;
+}
+
+.moon {
+  background-color: white;
+  border-radius: 100%;
+}
+.moon path,
+.moon polygon,
+.moon rect {
+  fill: #141414;
+}
+
+/*?  css for when light mode is active */
+
+.hidden {
+  display: none;
+}
+
+.light-mode {
+  background: #f5f5f5;
+  color: #141414;
+}
+
+.light-mode-gradient {
+  background: linear-gradient(
+    to right,
+    rgb(43, 42, 42) 20%,
+    rgb(205, 80, 247) 40%,
+    rgb(84, 164, 255) 60%,
+    /* #43d3ff 80%, */ rgb(49, 49, 49) 80%
+  );
+  background-size: 200% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 3s ease infinite;
+}
+
+.link-light-mode {
+  color: #238bf3;
 }
