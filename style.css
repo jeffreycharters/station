@@ -27,36 +27,6 @@ body {
   }
 }
 
-ol {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-  
-}
-
-li {
-  counter-increment: my-awesome-counter;
-  margin: 0.25rem;
-  
-}
-li::before {
-  content: counter(my-awesome-counter);
-  background: #662974;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: inline-block;
-  line-height: 2rem;
-  color: white;
-  text-align: center;
-  margin-right: 0.5rem;
-}
-ol ol li::before {
-  background: #DE51FF;
-}
-ol ol ol li::before {
-  background: #EE9EFF;
-}
-
 body {
   font-family: 'PT Serif', serif;
 }
@@ -87,6 +57,22 @@ body {
   filter: brightness(60%);
 }
 
+.ol-class{
+  list-style: none;
+  margin-bottom:30px ;
+  list-style: circle;
+  text-align: left;
+
+}
+
+.list-class{
+  width: 150px;
+  margin: auto;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
 .hero-content {
   position: relative;
   color: white;
