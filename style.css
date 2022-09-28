@@ -2,10 +2,14 @@ html {
   font-size: 62%;
 }
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
+
+body > * {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   max-width: 90%;
   margin: auto;
@@ -93,6 +97,7 @@ body {
 }
 
 .hero-title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 0;
@@ -100,7 +105,7 @@ body {
 
 .hero-subtitle {
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 400;
   margin-top: 16px;
   margin-bottom: 60px;
 }
@@ -111,7 +116,7 @@ body {
   color: black;
   padding: 10px 20px;
   border-radius: 8px;
-  font-weight: 400;
+  font-weight: 500;
   border: 2px solid #00e6e6;
   font-size: 20px;
 }
