@@ -4,9 +4,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
-
-body > * {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -28,15 +25,31 @@ body > * {
   }
 }
 
+.fave-container {
+  margin-top: 2em;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 3px solid #de51ff;
+  padding: 1em 0;
+}
+
 ol {
   list-style: none;
   counter-reset: my-awesome-counter;
+  border: 2px solid #ee9eff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 li {
   counter-increment: my-awesome-counter;
   margin: 0.25rem;
 }
+
 li::before {
   content: counter(my-awesome-counter);
   background: #662974;
@@ -56,9 +69,9 @@ ol ol ol li::before {
   background: #ee9eff;
 }
 
-body {
+/*body {
   font-family: "PT Serif", serif;
-}
+}*/
 
 /* Hero styles */
 
