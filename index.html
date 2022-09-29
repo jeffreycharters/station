@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark light">
-  <title>Station - A STTN Production</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Station - A STTN Production</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
-  <div class="container">
+  <body> <!-- opens the body of the document -->
+    <section class="container"> <!-- creates section for the body, sections are semantic replacement for divs -->
 
-    <section class="hero-section">
-      <div class="hero-content">
+      <!-- header section -->
+      <header class="hero-section"> 
+        <section class="hero-content">
           <h1 class="hero-title">
             Discover the joy of open source!
           </h1>
@@ -24,72 +25,83 @@
                 Learn work in a development team by making small contributions
           </h4>
         
-          <a class="hero-button" href="https://github.com/jeffreycharters/station" target="_blank">
+          <a class="hero-button" href="https://github.com/jeffreycharters/station" target="_blank"> <!-- link tag -->
                 Get started! &raquo;
           </a>
+        </section>
+      </header>
+      <!-- end of the header section -->
 
-      </div>
+      <main> <!-- main content of the page -->
+        <section>
+          <h1 id="h1">station</h1> <!--  -->
+          <p> <!--  -->
+            Hi. This is a community effort. &#127757;
+          </p>
+
+          <p>
+            We're curious to see where this takes us. &#128513;
+          </p>
+
+          <figure>
+            <!-- motivational image -->
+            <iframe src="https://giphy.com/embed/Ju7l5y9osyymQ" frameBorder="0" id="embed"></iframe> <!--  -->
+            <!-- image attribution -->
+            <p id="embed"><a href="https://giphy.com/">via GIPHY</a></p>
+          </figure>
+          
+
+          <p>
+            Check us out on <a href="https://github.com/jeffreycharters/station">Github</a>!
+          </p>
+
+          <p>
+            Join us on the <a href="https://discord.gg/NhAfhBnh8g">Self Taught Tech Network Discord server</a> &#128072
+          </p>
+        </section>
+        
+        <section>
+          <h2>Helpful Links </h2>
+
+          <p>check here to know  <a href="https://www.koskila.net/how-to-git-merge-upstream/">how to git merge upstream🧑‍💻</a></p>
+
+          <p>
+            click here for <a href="https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/">A Beginner's Handbook to Help You Start Contributing</a> &#128209
+          </p>
+        </section>
+        
+        <section>
+          <span id="visitCounter"></span>
+        </section>
+
+        <section>
+          <ol > <!-- ordered list -->
+            <li id="list">favourite sports 
+              <ol>
+                <li>football</li>
+                <li>Basketball</li>
+              </ol>
+            </li>
+          
+            <li id="list2">Favourite song
+              <ol> 
+                <li>suicide year</li> <!-- list item -->
+              </ol>
+            </li>
+          
+          </ol>
+        </section>
+        
+      </main>
+      
+      <footer> <!-- opens footer -->
+        <button id="plus" onclick="return func();">+</button> 
+      </footer> <!-- closes footer -->
+      
     </section>
 
+  </body> <!-- closes the body of the document -->
 
-  <h1 id="h1">station</h1>
-
-
-  <p>
-    Hi. This is a community effort. &#127757;
-  </p>
-
-  <p>
-    We're curious to see where this takes us. &#128513;
-  </p>
-
-  <!-- motivational image -->
-  <iframe src="https://giphy.com/embed/Ju7l5y9osyymQ" frameBorder="0" id="embed"></iframe>
-  <!-- image attribution -->
-  <p id="embed"><a href="https://giphy.com/">via GIPHY</a></p>
-
-  <p>
-    Check us out on <a href="https://github.com/jeffreycharters/station">Github</a>!
-  </p>
-
-  <p>
-    Join us on the <a href="https://discord.gg/NhAfhBnh8g">Self Taught Tech Network Discord server</a> &#128072
-  </p>
-
-<h2>Helpful Links </h2>
-
-  <p>check here to know  <a href="https://www.koskila.net/how-to-git-merge-upstream/">how to git merge upstream🧑‍💻</a></p>
-
-  <p>
-    click here for <a href="https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/">A Beginner's Handbook to Help You Start Contributing</a> &#128209
-  </p>
-
-  <div>
-    <span id="visitCounter"></span>
-  </div>
-  <ol >
-    <li id="list">favourite sports
-      <ol>
-        <li>football</li>
-        <li>Basketball</li>
-      </ol>
-    </li>
-    
-    <li id="list2">Favourite song
-      <ol>
-        <li>suicide year</li>
-      </ol>
-    </li>
-    
-  </ol>
-  <button id="plus" onclick="return func();">+</button>
-</div>
-
-
-
-
-</body>
-
-</html>
+</html> <!-- closes the document -->
 
 <script type="text/javascript" src="script.js"></script>
