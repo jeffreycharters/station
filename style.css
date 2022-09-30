@@ -13,6 +13,7 @@ body {
   /*border: 0.1vh solid paleturquoise;*/
   text-align: center;
   font-size: 2rem;
+  padding: 1em;
 }
 
 #embed {
@@ -32,13 +33,19 @@ body {
   flex-direction: row;
   justify-content: space-around;
   border: 3px solid #de51ff;
-  padding: 1em 0;
+  padding: 1em;
+}
+
+@media screen and (max-width: 480px) {
+  .fave-container {
+    flex-direction: column;
+  }
 }
 
 ol {
   list-style: none;
   counter-reset: my-awesome-counter;
-  border: 2px solid #ee9eff;
+  /*border: 2px solid #ee9eff;*/
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -56,7 +63,7 @@ li::before {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  display: inline-block;
+  /*display: inline-block;*/
   line-height: 2rem;
   color: white;
   text-align: center;
@@ -122,6 +129,7 @@ ol ol ol li::before {
   margin-top: 16px;
   margin-bottom: 60px;
 }
+
 
 .hero-button {
   text-decoration: none;
