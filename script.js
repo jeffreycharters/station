@@ -7,6 +7,13 @@ window.addEventListener("DOMContentLoaded", (load) => {
   localStorage.setItem("counter", (visit += 1));
 });
 
+function func()
+{
+  document.getElementById('embed').style.display='inline-block';
+  document.getElementById('h1').scrollIntoView();
+  new Audio("epic.mp3").play();
+  document.getElementById('plus').style.display='none';
+}
 
 window.addEventListener('DOMContentLoaded',(load)=>{
  let visit=Number(localStorage.getItem('counter'))
