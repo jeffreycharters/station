@@ -52,3 +52,10 @@ icons.forEach(function (e) {
     }
   });
 });
+
+const colorForm = document.getElementById("color-form");
+const colorPicker = document.getElementById("color-picker");
+colorForm.addEventListener("submit", function changeColor(e){
+  e.preventDefault();
+  colorForm.style.backgroundColor = colorPicker.value;
+});

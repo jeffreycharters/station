@@ -220,3 +220,42 @@ h2 {
 .link-light-mode {
   color: #238bf3;
 }
+
+.color-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; 
+  background-color:#293261;
+  margin-top: 2em;
+  height: 5em;
+  border: 1px solid white;
+}
+
+.color-input {
+  width: 325px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="color"] {
+	width: 48px;
+	height: 24px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: 2px solid #564e4e;
+}
+
+#color-submit {
+  width: 270px;
+  background-color: #ee9eff;
+  color: #293261;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 3rem;
+}
