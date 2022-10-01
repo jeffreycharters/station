@@ -1,6 +1,11 @@
 # Contributing to STaTioN
 
+<<<<<<< Updated upstream
 The entire purpose of this repository/website combination is to learn and have fun.
+=======
+# :tada: How to contribute to this project
+1. Before you can work on this, you need to `fork` the project. A fork is a copy of a repository. The fork button is shown below.
+>>>>>>> Stashed changes
 
 We think it's super if you're interested in contributing and will accept a lot of changes as long as people are trying.
 
