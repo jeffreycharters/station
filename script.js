@@ -59,19 +59,3 @@ icons.forEach(function (e) {
     }
   });
 });
-
-
-// change form bg color
-
-const colorForm = document.getElementById("color-form");
-const colorPicker = document.getElementById("color-picker");
-const favoriteHex = document.getElementById("favorite-hex")
-
-colorForm.addEventListener("submit", function changeColor(e){
-  e.preventDefault();
-  colorForm.style.backgroundColor = colorPicker.value;
-  favoriteHex.innerHTML = `
-    Your favorite color has the hex code: ${colorPicker.value}
-  `;
-  
-});
