@@ -13,7 +13,12 @@ body {
   text-align: center;
   font-size: 2rem;
 }
-
+h1{
+  background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
 @media screen and (max-width:480px) 
 /* 
 .embed {
