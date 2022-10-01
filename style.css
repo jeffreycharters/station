@@ -20,11 +20,6 @@ h1{
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
 }
-  background: linear-gradient(to right, #ffffff,
-                    #ffa366, #ee57ee, #ffec1f);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-}
 
 @media screen and (max-width:480px) 
 /* 
@@ -39,7 +34,6 @@ h1{
 }
 
 
-
 #embed {
   display: none;
 }
@@ -47,7 +41,7 @@ h1{
 
 
 .fave-container {
-  margin-top: 2em;
+  margin-top: 3em;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -206,8 +200,9 @@ ol ol ol li::before {
             -o-transform: scale(1, -1);
             -ms-transform: scale(1, -1);
             transform: scale(1, -1);
+}
 
-#plus {
+#plus{
   position: absolute;
   right: 0px;
   height: 65px;
