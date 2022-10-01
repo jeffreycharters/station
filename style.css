@@ -15,6 +15,7 @@ body {
   font-size: 2rem;
   padding: 1em;
 }
+
 h1{
   background: linear-gradient(to right, #f32170,
                     #ff6b08, #cf23cf, #eedd44);
@@ -38,7 +39,6 @@ h1{
     max-width: 100%;
   }
 }
-
 
 
 #embed {
@@ -104,7 +104,6 @@ ol ol ol li::before {
 }
 
 
-
 /*body {
   font-family: "PT Serif", serif;
 }*/
@@ -134,29 +133,10 @@ ol ol ol li::before {
   filter: brightness(60%);
 }
 
-
-.ol-class{
-  list-style: none;
-  margin-bottom:30px ;
-  list-style: circle;
-  text-align: left;
-
-}
-
-.list-class{
-  width: 150px;
-  margin: auto;
-  width: 150px;
-  padding: 10px;
-  text-align: center;
-  margin-top: 30px;
-}
-
 .hero-section:hover .hero-section::before {
   filter: brightness(100%);
   border: 1px solid red;
 }
-
 
 .hero-content {
   position: relative;
@@ -193,27 +173,6 @@ ol ol ol li::before {
 .hero-button:hover {
   background-color: #00b3b3;
 }
-
-
-.rotateText2:hover{
-  transition: 0.7s ease-in-out;
-  transform: scale(1, -1);
-            color: #000080;
-            -moz-transform: scale(1, -1);
-            -webkit-transform: scale(1, -1);
-            -o-transform: scale(1, -1);
-            -ms-transform: scale(1, -1);
-            transform: scale(1, -1);
-}
-.rotateText1{
-  transition: 0.7s ease-in-out;
-  transform: scale(1, -1);
-            color: #000080;
-            -moz-transform: scale(1, -1);
-            -webkit-transform: scale(1, -1);
-            -o-transform: scale(1, -1);
-            -ms-transform: scale(1, -1);
-            transform: scale(1, -1);
 
 #plus {
   position: absolute;
@@ -379,6 +338,5 @@ input[type="color"]::-webkit-color-swatch {
   margin: 0;
   padding: 0;
  }
-
 
 }
