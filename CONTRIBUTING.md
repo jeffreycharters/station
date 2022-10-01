@@ -5,6 +5,8 @@ In order to contribute to this project, all you need is:
 
 # :tada: How to contribute
 1. Before you can work on this, you need to `fork` the project. A fork is a copy of a repository. The fork button is shown below.
+![Screenshot of repo page with fork button circled.](https://user-images.githubusercontent.com/81039882/193431398-75d3d606-8e6e-42ea-b153-3b6dfbf59742.png)
+
 
  2. In order to work on this project in your local IDE, you have to clone your fork.
 
