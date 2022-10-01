@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -156,7 +156,7 @@ ol ol ol li::before {
 }
 
 .hero-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 0;
@@ -223,6 +223,7 @@ h2 {
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   animation: animate 3s ease infinite;
 }
 
@@ -281,6 +282,7 @@ h2 {
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   animation: animate 3s ease infinite;
 }
 
