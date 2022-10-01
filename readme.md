@@ -53,7 +53,7 @@ The following people are willing to help you via Twitter as well:
 
 - Jeffrey [@radridersdesign](https://twitter.com/radridersdesign)
 - Sara [@sarajwallen](https://twitter.com/sarajwallen)
-
+- Michaella [@NotMichaella](https://twitter.com/NotMichaella)
 
 👆 Feel free to add your info here and create a Pull Request to get added!
 
