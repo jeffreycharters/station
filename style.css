@@ -36,7 +36,7 @@ body {
   padding: 1em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .fave-container {
     flex-direction: column;
   }
@@ -235,6 +235,8 @@ h2 {
   justify-content: space-around;
   align-items: center; 
   background-color:#293261;
+  color: white;
+  text-shadow: 2px 2px 3px black;
   margin-top: 2em;
   height: 5em;
   border: 1px solid white;
@@ -266,4 +268,9 @@ input[type="color"]::-webkit-color-swatch {
   border: none;
   border-radius: 6px;
   padding: 1rem 3rem;
+  box-shadow: 2px 2px 10px #37343c;
+}
+
+#color-submit:hover, #color-submit:focus {
+  opacity: .75;
 }
