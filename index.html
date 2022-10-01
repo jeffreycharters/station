@@ -58,6 +58,38 @@
     <div>
       <span id="visitCounter"></span>
     </div>
+    
+    <section class="favourites">
+      <div class="fave-container">
+        <div id="list">
+          <p>favourite sports</p>
+          <ol>
+            <li>football</li>
+            <li>Basketball</li>
+          </ol>
+        </div>
+        
+        <div id="list2">
+          <p>Favourite song</p>
+          <ol>
+            <li>suicide year</li>
+            <li>Nights - Frank Ocean</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+
+    <form id="color-form" class="color-form">
+      <div class="color-input">
+        <label for="color-picker">What's your favorite color?</label>
+        <input type="color" id="color-picker" class="color-picker" /> 
+      </div>
+      <button type="submit" id="color-submit">Click to change background</button>
+    </form>
+    <p id="favorite-hex"></p>
+
+
     <section class="favourites"></section>
     <ol class="fave-container">
       <li id="list"> favourite sports
@@ -75,7 +107,9 @@
         </ol>
       </li>
     </ol>
+
     <button id="plus" onclick="return func();">+</button>
+    
   </div>
 
   <svg class="svg-icon sun" data-set="moon" viewBox="0 0 20 20">
