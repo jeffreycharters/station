@@ -14,6 +14,29 @@ body {
   text-align: center;
   font-size: 2rem;
 }
+h1{
+  background: linear-gradient(to right, #ffffff,
+                    #ffa366, #ee57ee, #ffec1f);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+
+
+@media screen and (max-width:480px) 
+/* 
+.embed {
+  height: 360px;
+  width: 480px;
+} */
+{
+  .container{
+    max-width: 100%;
+  }
+}
+
+body {
+  font-family: 'PT Serif', serif;
+}
 
 #embed {
   display: none;
@@ -72,6 +95,7 @@ ol ol ol li::before {
 }
 
 
+
 /*body {
   font-family: "PT Serif", serif;
 }*/
@@ -101,10 +125,29 @@ ol ol ol li::before {
   filter: brightness(60%);
 }
 
+
+.ol-class{
+  list-style: none;
+  margin-bottom:30px ;
+  list-style: circle;
+  text-align: left;
+
+}
+
+.list-class{
+  width: 150px;
+  margin: auto;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .hero-section:hover .hero-section::before {
   filter: brightness(100%);
   border: 1px solid red;
 }
+
 
 .hero-content {
   position: relative;
@@ -140,6 +183,27 @@ ol ol ol li::before {
 .hero-button:hover {
   background-color: #00b3b3;
 }
+
+
+.rotateText2:hover{
+  transition: 0.7s ease-in-out;
+  transform: scale(1, -1);
+            color: #000080;
+            -moz-transform: scale(1, -1);
+            -webkit-transform: scale(1, -1);
+            -o-transform: scale(1, -1);
+            -ms-transform: scale(1, -1);
+            transform: scale(1, -1);
+}
+.rotateText1{
+  transition: 0.7s ease-in-out;
+  transform: scale(1, -1);
+            color: #000080;
+            -moz-transform: scale(1, -1);
+            -webkit-transform: scale(1, -1);
+            -o-transform: scale(1, -1);
+            -ms-transform: scale(1, -1);
+            transform: scale(1, -1);
 
 #plus {
   position: absolute;
@@ -259,5 +323,6 @@ h2 {
   margin: 0;
   padding: 0;
  }
+
 
 }
