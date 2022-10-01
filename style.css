@@ -13,6 +13,12 @@ body {
   text-align: center;
   font-size: 2rem;
 }
+h1{
+  background: linear-gradient(to right, #ffffff,
+                    #ffa366, #ee57ee, #ffec1f);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
 
 @media screen and (max-width:480px) 
 /* 
@@ -20,7 +26,6 @@ body {
   height: 360px;
   width: 480px;
 } */
-
 {
   .container{
     max-width: 100%;
