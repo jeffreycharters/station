@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -15,20 +15,41 @@ body {
   font-size: 2rem;
   padding: 1em;
 }
+h1{
+  background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+  background: linear-gradient(to right, #ffffff,
+                    #ffa366, #ee57ee, #ffec1f);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+
+@media screen and (max-width:480px) 
+/* 
+.embed {
+  height: 360px;
+  width: 480px;
+} */
+{
+  .container{
+    max-width: 100%;
+  }
+}
+
+
 
 #embed {
   display: none;
 }
 
-@media screen and (max-width: 480px) /* .embed { height: 360px; width: 480px; } */ {
-  .container {
-    max-width: 100%;
-  }
-}
+
 
 .fave-container {
   margin-top: 2em;
-  text-align: start;
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -50,11 +71,17 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+ 
+}
+
+#list, #list2 {
+  width: 50%;
 }
 
 li {
   counter-increment: my-awesome-counter;
   margin: 0.25rem;
+  
 }
 
 li::before {
@@ -75,6 +102,8 @@ ol ol li::before {
 ol ol ol li::before {
   background: #ee9eff;
 }
+
+
 
 /*body {
   font-family: "PT Serif", serif;
@@ -105,10 +134,29 @@ ol ol ol li::before {
   filter: brightness(60%);
 }
 
+
+.ol-class{
+  list-style: none;
+  margin-bottom:30px ;
+  list-style: circle;
+  text-align: left;
+
+}
+
+.list-class{
+  width: 150px;
+  margin: auto;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .hero-section:hover .hero-section::before {
   filter: brightness(100%);
   border: 1px solid red;
 }
+
 
 .hero-content {
   position: relative;
@@ -117,7 +165,7 @@ ol ol ol li::before {
 }
 
 .hero-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 0;
@@ -146,6 +194,27 @@ ol ol ol li::before {
   background-color: #00b3b3;
 }
 
+
+.rotateText2:hover{
+  transition: 0.7s ease-in-out;
+  transform: scale(1, -1);
+            color: #000080;
+            -moz-transform: scale(1, -1);
+            -webkit-transform: scale(1, -1);
+            -o-transform: scale(1, -1);
+            -ms-transform: scale(1, -1);
+            transform: scale(1, -1);
+}
+.rotateText1{
+  transition: 0.7s ease-in-out;
+  transform: scale(1, -1);
+            color: #000080;
+            -moz-transform: scale(1, -1);
+            -webkit-transform: scale(1, -1);
+            -o-transform: scale(1, -1);
+            -ms-transform: scale(1, -1);
+            transform: scale(1, -1);
+
 #plus {
   position: absolute;
   right: 0px;
@@ -164,6 +233,7 @@ h2 {
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   animation: animate 3s ease infinite;
 }
 
@@ -222,6 +292,7 @@ h2 {
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   animation: animate 3s ease infinite;
 }
 
@@ -273,4 +344,41 @@ input[type="color"]::-webkit-color-swatch {
 
 #color-submit:hover, #color-submit:focus {
   opacity: .75;
+
+
+@media screen and (max-width: 550px) /* .embed { height: 360px; width: 480px; } */ {
+  .container {
+    max-width: 100%;
+  }
+/* I chose 550px because the list breaks at around that pixel size. */
+
+ .fave-container {
+  flex-direction: column;  
+  text-align: center;
+ }
+
+ /* I put the list items as column for better visibility */
+
+ #list, #list2 {
+
+   align-self: center;
+ }
+
+ #list2 {
+  margin-top: 2rem;
+ }
+ li{
+  text-align: left;
+  margin: 0 auto ;
+  width: 90%;
+  align-self: center;
+ }
+
+
+ ol {
+  margin: 0;
+  padding: 0;
+ }
+
+
 }
