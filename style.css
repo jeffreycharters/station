@@ -1,3 +1,4 @@
+/* Base Styles */
 html {
   font-size: 62%;
 }
@@ -5,9 +6,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
+/* Container Styles */
 .container {
   max-width: 90%;
   margin: auto;
@@ -17,108 +20,14 @@ body {
   padding: 1em;
 }
 
+/* Universal style for h1 */
 h1 {
-  background: linear-gradient(to right, #f32170,
-      #ff6b08, #cf23cf, #eedd44);
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-background :linear-gradient(to right, #ffffff, #ffa366, #ee57ee, #ffec1f);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
-}
-
-@media screen and (max-width:480px)
-
-/*
-.embed {
-  height: 360px;
-  width: 480px;
-} */
-  {
-  .container {
-    max-width: 100%;
-  }
-}
-
-
-#embed {
-  display: none;
-}
-
-
-
-.fave-container {
-  margin-top: 2em;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 3px solid #de51ff;
-  padding: 1em;
-}
-
-@media screen and (max-width: 600px) {
-  .fave-container {
-    flex-direction: column;
-  }
-  .fave-container p {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-ol {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-  /*border: 2px solid #ee9eff;*/
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-}
-
-#list,
-#list2 {
-  width: 50%;
-}
-
-li {
-  counter-increment: my-awesome-counter;
-  margin: 0.25rem;
-
-}
-
-li::before {
-  content: counter(my-awesome-counter);
-  background: #662974;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  /*display: inline-block;*/
-  line-height: 2rem;
-  color: white;
-  text-align: center;
-  margin-right: 0.5rem;
-}
-
-ol ol li::before {
-  background: #de51ff;
-}
-
-ol ol ol li::before {
-  background: #ee9eff;
-}
-
-
-/*body {
-  font-family: "PT Serif", serif;
-}*/
-
-/* Hero styles */
-
+/* Style for hero section */
 .hero-section {
   /* position: relative; */
   /* width: 80vw;  */
@@ -135,7 +44,7 @@ ol ol ol li::before {
   left: 0;
   width: 100%;
   height: 90%;
-  background: url(images/coding-photo2.jpg);
+  background: url(./assets/images/coding-photo2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -167,7 +76,6 @@ ol ol ol li::before {
   margin-bottom: 60px;
 }
 
-
 .hero-button {
   text-decoration: none;
   background-color: #00cccc;
@@ -183,13 +91,12 @@ ol ol ol li::before {
   background-color: #00b3b3;
 }
 
-#plus {
-  position: absolute;
-  right: 0px;
-  height: 65px;
-  width: 65px;
+/* Style for about section */
+#embed {
+  display: none;
 }
 
+/* Universal style for h2 */
 h2 {
   background: linear-gradient(to right,
       #fff 20%,
@@ -210,6 +117,115 @@ h2 {
   }
 }
 
+/* Styles for favourites section */
+.fave-container {
+  margin-top: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 3px solid #de51ff;
+  padding: 1em;
+}
+
+#list,
+#list2 {
+  width: 50%;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  /*border: 2px solid #ee9eff;*/
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+li {
+  counter-increment: my-awesome-counter;
+  margin: 0.25rem;
+}
+
+li::before {
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  /*display: inline-block;*/
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+ol ol li::before {
+  background: #de51ff;
+}
+
+ol ol ol li::before {
+  background: #ee9eff;
+}
+
+/* Styles for color form */
+.color-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #293261;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  margin-top: 2em;
+  height: 5em;
+  border: 1px solid white;
+}
+
+.color-input {
+  width: 325px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="color"] {
+  width: 48px;
+  height: 24px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: 2px solid #564e4e;
+}
+
+#color-submit {
+  width: 270px;
+  background-color: #ee9eff;
+  color: #293261;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 3rem;
+  box-shadow: 2px 2px 10px #37343c;
+}
+
+#color-submit:hover,
+#color-submit:focus {
+  opacity: 0.75;
+}
+
+/* Style for Plus Button */
+#plus {
+  position: absolute;
+  right: 0px;
+  height: 65px;
+  width: 65px;
+}
+
+/* Styles for SUN & MOON svg-icons */
 .svg-icon {
   width: 30px;
   height: 30px;
@@ -238,12 +254,11 @@ h2 {
   fill: #141414;
 }
 
-/*?  css for when light mode is active */
-
 .hidden {
   display: none;
 }
 
+/*  css for when light mode is active */
 .light-mode {
   background: #f5f5f5;
   color: #141414;
@@ -267,117 +282,51 @@ h2 {
   color: #238bf3;
 }
 
-.color-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #293261;
-  color: white;
-  text-shadow: 2px 2px 3px black;
-  margin-top: 2em;
-  height: 5em;
-  border: 1px solid white;
-}
-
-.color-input {
-  width: 325px;
-  display: flex;
-  justify-content: space-between;
-}
-
-input[type="color"] {
-  width: 48px;
-  height: 24px;
-}
-
-input[type="color"]::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-input[type="color"]::-webkit-color-swatch {
-  border: 2px solid #564e4e;
-}
-
-#color-submit {
-  width: 270px;
-  background-color: #ee9eff;
-  color: #293261;
-  font-family: inherit;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  padding: 1rem 3rem;
-  box-shadow: 2px 2px 10px #37343c;
-}
-
-#color-submit:hover,
-#color-submit:focus {
-  opacity: .75;
+/* Mobile Styles*/
+@media screen and (max-width: 480px) /* .embed { height: 360px; width: 480px; } */ {
+  .container {
+    max-width: 100%;
+  }
 
 
-  @media screen and (max-width: 550px)
-
-  /* .embed { height: 360px; width: 480px; } */
-    {
-    .container {
-      max-width: 100%;
-    }
-
-    /* I chose 550px because the list breaks at around that pixel size. */
-
-    .fave-container {
-      flex-direction: center;
-      text-align: center;
-    }
-
-    /* I put the list items as column for better visibility */
-
-    #list,
-    #list2 {
-
-      align-self: center;
-    }
-
-    #list2 {
-      margin-top: 2rem;
-    }
-
-    li {
-      text-align: left;
-      margin: 0 auto;
-      width: 90%;
-      align-self: center;
-    }
-
-
-    ol {
-      margin: 0;
-      padding: 0;
-    }
-
+  .hero-section {
+    height: 80vh;
   }
 }
 
-@media screen and (max-width : 450px) {
-  .color-form {
-    height: 130px;
+/* Tablet Styles */
+@media screen and (max-width: 550px) /* .embed { height: 360px; width: 480px; } */ {
+  .container {
+    max-width: 100%;
+  }
+  /* I chose 550px because the list breaks at around that pixel size. */
+
+  .fave-container {
+    flex-direction: column;
+    text-align: center;
   }
 
-  label {
-    font-size: 20px;
+  /* I put the list items as column for better visibility */
 
+  #list,
+  #list2 {
+    align-self: center;
   }
 
-  .color-input {
-    width: 244px;
+  #list2 {
+    margin-top: 2rem;
   }
 
-  .color-form input {
-    width: 40px;
+  ol {
+    margin: 0;
+    padding: 0;
   }
 
-  #color-submit {
-    width: 250px;
+  li {
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+    align-self: center;
   }
 }
+
