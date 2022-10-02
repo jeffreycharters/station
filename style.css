@@ -1,6 +1,7 @@
 html {
   font-size: 62%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -16,26 +17,27 @@ body {
   padding: 1em;
 }
 
-h1{
+h1 {
   background: linear-gradient(to right, #f32170,
-                    #ff6b08, #cf23cf, #eedd44);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-}
-  background: linear-gradient(to right, #ffffff,
-                    #ffa366, #ee57ee, #ffec1f);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+      #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-@media screen and (max-width:480px) 
-/* 
+background :linear-gradient(to right, #ffffff, #ffa366, #ee57ee, #ffec1f);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+@media screen and (max-width:480px)
+
+/*
 .embed {
   height: 360px;
   width: 480px;
 } */
-{
-  .container{
+  {
+  .container {
     max-width: 100%;
   }
 }
@@ -61,6 +63,10 @@ h1{
   .fave-container {
     flex-direction: column;
   }
+  .fave-container p {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 ol {
@@ -71,17 +77,18 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
- 
+
 }
 
-#list, #list2 {
+#list,
+#list2 {
   width: 50%;
 }
 
 li {
   counter-increment: my-awesome-counter;
   margin: 0.25rem;
-  
+
 }
 
 li::before {
@@ -96,9 +103,11 @@ li::before {
   text-align: center;
   margin-right: 0.5rem;
 }
+
 ol ol li::before {
   background: #de51ff;
 }
+
 ol ol ol li::before {
   background: #ee9eff;
 }
@@ -182,13 +191,12 @@ ol ol ol li::before {
 }
 
 h2 {
-  background: linear-gradient(
-    to right,
-    #fff 20%,
-    rgb(205, 80, 247) 40%,
-    rgb(84, 164, 255) 60%,
-    /* #43d3ff 80%, */ rgb(255, 255, 255) 80%
-  );
+  background: linear-gradient(to right,
+      #fff 20%,
+      rgb(205, 80, 247) 40%,
+      rgb(84, 164, 255) 60%,
+      /* #43d3ff 80%, */
+      rgb(255, 255, 255) 80%);
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -223,6 +231,7 @@ h2 {
   background-color: white;
   border-radius: 100%;
 }
+
 .moon path,
 .moon polygon,
 .moon rect {
@@ -241,13 +250,12 @@ h2 {
 }
 
 .light-mode-gradient {
-  background: linear-gradient(
-    to right,
-    rgb(43, 42, 42) 20%,
-    rgb(205, 80, 247) 40%,
-    rgb(84, 164, 255) 60%,
-    /* #43d3ff 80%, */ rgb(49, 49, 49) 80%
-  );
+  background: linear-gradient(to right,
+      rgb(43, 42, 42) 20%,
+      rgb(205, 80, 247) 40%,
+      rgb(84, 164, 255) 60%,
+      /* #43d3ff 80%, */
+      rgb(49, 49, 49) 80%);
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -263,8 +271,8 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; 
-  background-color:#293261;
+  align-items: center;
+  background-color: #293261;
   color: white;
   text-shadow: 2px 2px 3px black;
   margin-top: 2em;
@@ -279,14 +287,16 @@ h2 {
 }
 
 input[type="color"] {
-	width: 48px;
-	height: 24px;
+  width: 48px;
+  height: 24px;
 }
+
 input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
+  padding: 0;
 }
+
 input[type="color"]::-webkit-color-swatch {
-	border: 2px solid #564e4e;
+  border: 2px solid #564e4e;
 }
 
 #color-submit {
@@ -301,42 +311,73 @@ input[type="color"]::-webkit-color-swatch {
   box-shadow: 2px 2px 10px #37343c;
 }
 
-#color-submit:hover, #color-submit:focus {
+#color-submit:hover,
+#color-submit:focus {
   opacity: .75;
 
 
-@media screen and (max-width: 550px) /* .embed { height: 360px; width: 480px; } */ {
-  .container {
-    max-width: 100%;
+  @media screen and (max-width: 550px)
+
+  /* .embed { height: 360px; width: 480px; } */
+    {
+    .container {
+      max-width: 100%;
+    }
+
+    /* I chose 550px because the list breaks at around that pixel size. */
+
+    .fave-container {
+      flex-direction: center;
+      text-align: center;
+    }
+
+    /* I put the list items as column for better visibility */
+
+    #list,
+    #list2 {
+
+      align-self: center;
+    }
+
+    #list2 {
+      margin-top: 2rem;
+    }
+
+    li {
+      text-align: left;
+      margin: 0 auto;
+      width: 90%;
+      align-self: center;
+    }
+
+
+    ol {
+      margin: 0;
+      padding: 0;
+    }
+
   }
-/* I chose 550px because the list breaks at around that pixel size. */
+}
 
- .fave-container {
-  flex-direction: column;  
-  text-align: center;
- }
+@media screen and (max-width : 450px) {
+  .color-form {
+    height: 130px;
+  }
 
- /* I put the list items as column for better visibility */
+  label {
+    font-size: 20px;
 
- #list, #list2 {
+  }
 
-   align-self: center;
- }
+  .color-input {
+    width: 244px;
+  }
 
- #list2 {
-  margin-top: 2rem;
- }
- li{
-  text-align: left;
-  margin: 0 auto ;
-  width: 90%;
-  align-self: center;
- }
+  .color-form input {
+    width: 40px;
+  }
 
-
- ol {
-  margin: 0;
-  padding: 0;
- }
-
+  #color-submit {
+    width: 250px;
+  }
 }
