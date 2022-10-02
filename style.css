@@ -330,3 +330,28 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
+.container {
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.testinomials {
+  background: #00b3b3;
+}
