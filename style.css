@@ -98,13 +98,12 @@ h1 {
 
 /* Universal style for h2 */
 h2 {
-  background: linear-gradient(
-    to right,
-    #fff 20%,
-    rgb(205, 80, 247) 40%,
-    rgb(84, 164, 255) 60%,
-    /* #43d3ff 80%, */ rgb(255, 255, 255) 80%
-  );
+  background: linear-gradient(to right,
+      #fff 20%,
+      rgb(205, 80, 247) 40%,
+      rgb(84, 164, 255) 60%,
+      /* #43d3ff 80%, */
+      rgb(255, 255, 255) 80%);
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -248,6 +247,7 @@ input[type="color"]::-webkit-color-swatch {
   background-color: white;
   border-radius: 100%;
 }
+
 .moon path,
 .moon polygon,
 .moon rect {
@@ -265,13 +265,12 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .light-mode-gradient {
-  background: linear-gradient(
-    to right,
-    rgb(43, 42, 42) 20%,
-    rgb(205, 80, 247) 40%,
-    rgb(84, 164, 255) 60%,
-    /* #43d3ff 80%, */ rgb(49, 49, 49) 80%
-  );
+  background: linear-gradient(to right,
+      rgb(43, 42, 42) 20%,
+      rgb(205, 80, 247) 40%,
+      rgb(84, 164, 255) 60%,
+      /* #43d3ff 80%, */
+      rgb(49, 49, 49) 80%);
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -288,6 +287,7 @@ input[type="color"]::-webkit-color-swatch {
   .container {
     max-width: 100%;
   }
+
 
   .hero-section {
     height: 80vh;
@@ -329,3 +329,4 @@ input[type="color"]::-webkit-color-swatch {
     align-self: center;
   }
 }
+
