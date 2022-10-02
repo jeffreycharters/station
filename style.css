@@ -303,40 +303,4 @@ input[type="color"]::-webkit-color-swatch {
 
 #color-submit:hover, #color-submit:focus {
   opacity: .75;
-
-
-@media screen and (max-width: 550px) /* .embed { height: 360px; width: 480px; } */ {
-  .container {
-    max-width: 100%;
-  }
-/* I chose 550px because the list breaks at around that pixel size. */
-
- .fave-container {
-  flex-direction: column;  
-  text-align: center;
- }
-
- /* I put the list items as column for better visibility */
-
- #list, #list2 {
-
-   align-self: center;
- }
-
- #list2 {
-  margin-top: 2rem;
- }
- li{
-  text-align: left;
-  margin: 0 auto ;
-  width: 90%;
-  align-self: center;
- }
-
-
- ol {
-  margin: 0;
-  padding: 0;
- }
-
 }
