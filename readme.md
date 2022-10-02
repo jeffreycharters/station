@@ -1,13 +1,11 @@
-# STaTioN
+# :computer: STaTioN
 
 A collectively-created website collaboratively created by the Self-Taught Tech Network (STTN) community.
 
 See it live: https://station-team.netlify.app
 
 
-
-
-## What is this?
+## :question: What is this?
 
 Many self-taught developers learn to code by themselves by reading or watching tutorials and coding along with them. Eventually they will probably strike out and create a few projects.
 
@@ -29,25 +27,22 @@ We're all learning here and like many things in the coding world, you learn best
 
 
 
-
-## Getting Started
+## :hammer: Getting Started
 
 There can be a lot to learn when getting involved in open-source projects if you've never done it before. If you already know some HTML, you should be able to get started here by learning a little bit about Git and Github. Git is version control software, if you do a web search you should find a lot of resources to get you started.
 
-Do you already know about these things? One of your contributors found [this handy guide](https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/) to get you started with forking a repository and creating a pull request. If you are comfortable reading documentation, Github's is pretty accessible and they have a good section on [working collaboratively](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models) that is worth a read.
+Do you already know about these things? One of your contributors found [this handy guide](https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/) to get you started with forking a repository and creating a pull request. Our [CONTRIBUTING.md](https://github.com/jeffreycharters/station/blob/main/CONTRIBUTING.md) has some quick steps that could also get you started. If you are comfortable reading documentation, Github's is pretty accessible and they have a good section on [working collaboratively](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models) that is worth a read.
 
 
 
+## :information_desk_person: Getting Help
 
-## Getting Help
-
-### Discord
+### :space_invader: Discord
 
 The group on the [STTN Discord Server](https://discord.gg/NhAfhBnh8g) would be quite willing to help you! When you join, just go to the **open-source** channel and jump in! The whole group exists to learn!
 
 
-
-### Twitter
+### :bird: Twitter
 
 The following people are willing to help you via Twitter as well:
 
@@ -56,7 +51,6 @@ The following people are willing to help you via Twitter as well:
 - Michaella [@NotMichaella](https://twitter.com/NotMichaella)
 
 👆 Feel free to add your info here and create a Pull Request to get added!
-
 
 
 
