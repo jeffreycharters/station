@@ -1,8 +1,15 @@
+
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 @font-face {
   font-family: "PP Mondwest";
   src: url(./assets/fonts/62bf127eaeec3d3029d770ba_PPMondwest-Regular.otf);
+}
+
+
+:root{
+  --bgc:black;
+  --content:white;
 }
 
 /* Base Styles */
@@ -15,6 +22,27 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+
+/* Editing Scrollbar */
+
+::-webkit-scrollbar{
+  width:2em;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(blue,darkmagenta, red);
+  border: 0.25em solid var(--content);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient(rgb(51, 51, 255),magenta,rgb(251, 52, 52));
 }
 
 /* Container Styles */
@@ -315,14 +343,13 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .moon {
-  background-color: white;
   border-radius: 100%;
 }
 
 .moon path,
 .moon polygon,
 .moon rect {
-  fill: #141414;
+  fill: black;
 }
 
 .hidden {
@@ -402,7 +429,51 @@ input[type="color"]::-webkit-color-swatch {
     align-self: center;
   }
 
+
   .hero-section .hero-content .image img {
     max-width: 80%;
   }
 }
+
+}
+
+.testinomials {
+  background: #00b3b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test-container {
+  border-radius: 5px;
+  padding: 16px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+/*.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+
+.container img {
+  /*float: left;
+  margin-right: 20px;*/
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.container span {
+  font-size: 24px;
+  /*margin-right: 15px;*/
+}
+
+.testinomials .container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
