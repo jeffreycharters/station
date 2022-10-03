@@ -25,6 +25,7 @@ const icons = document.querySelectorAll(".svg-icon");
 const container = document.querySelector(".container");
 const title = document.querySelector("h2");
 const links = document.querySelectorAll(".link");
+let root = document.querySelector(":root");
 
 icons.forEach(function (e) {
   e.addEventListener("click", function () {
@@ -39,16 +40,20 @@ icons.forEach(function (e) {
       links.forEach((e) => e.classList.add("link-light-mode"));
       links[1].style.color = "#FA7070";
       links[3].style.color = "#FA7070";
-
+      root.style.setProperty('--bgc','white');
+      root.style.setProperty('--content','black');
+      
       document.querySelector("body").classList.add("light-mode");
     } else {
       container.classList.remove("light-mode");
       links[1].style.color = null;
       links[3].style.color = null;
-
+      
       title.classList.remove("light-mode-gradient");
       links.forEach((e) => e.classList.remove("link-light-mode"));
       document.querySelector("body").classList.remove("light-mode");
+      root.style.setProperty('--bgc','black');
+      root.style.setProperty('--content','white');
     }
   });
 });
