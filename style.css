@@ -15,9 +15,12 @@ body {
   max-width: 90%;
   margin: auto;
   /*border: 0.1vh solid paleturquoise;*/
-  text-align: center;
   font-size: 2rem;
   padding: 1em;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Universal style for h1 */
@@ -364,3 +367,9 @@ input[type="color"]::-webkit-color-swatch {
   font-size: 24px;
   /*margin-right: 15px;*/
 }
+
+.testinomials .container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
