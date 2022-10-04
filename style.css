@@ -183,6 +183,7 @@ h2 {
   justify-content: space-around;
   border: 3px solid #de51ff;
   padding: 1em;
+  border-radius: 20px;
 }
 
 #list,
@@ -218,22 +219,14 @@ li {
 li::before {
   content: counter(my-awesome-counter);
   background: #662974;
-  width: 2rem;
-  height: 2rem;
+  align-items: center;
   border-radius: 50%;
-  /*display: inline-block;*/
-  line-height: 2rem;
   color: white;
-  text-align: center;
-  margin-right: 0.5rem;
-}
-
-ol ol li::before {
-  background: #de51ff;
-}
-
-ol ol ol li::before {
-  background: #ee9eff;
+  display: inline-flex;
+  height: 24px;
+  justify-content: center;
+  margin-right: 10px;
+  width: 24px;
 }
 
 /* Testimonials */
@@ -280,6 +273,7 @@ ol ol ol li::before {
   margin-top: 2em;
   height: 5em;
   border: 1px solid white;
+  border-radius: 20px;
 }
 
 .color-input {
@@ -401,11 +395,20 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
+
 /* Large Tablet Styles */
 @media screen and (max-width: 790px) {
   .hero-content .hero-title {
     font-size: 20vw;
     line-height: 100%;
+
+  /* I put the list items as column for better visibility */
+
+  #list,
+  #list2 {
+    align-self: center;
+    width: 95%;
+
   }
 
   .hero-section .hero-content .image,
@@ -472,7 +475,7 @@ input[type="color"]::-webkit-color-swatch {
   /*margin-right: 15px;*/
 }
 
-.testinomials .container {
+.testimonials .container {
   margin: 0 auto;
   max-width: 500px;
 }
