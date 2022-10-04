@@ -154,6 +154,7 @@ h2 {
   justify-content: space-around;
   border: 3px solid #de51ff;
   padding: 1em;
+  border-radius: 20px;
 }
 
 #list,
@@ -201,6 +202,7 @@ li::before {
   margin-top: 2em;
   height: 5em;
   border: 1px solid white;
+  border-radius: 20px;
 }
 
 .color-input {
@@ -385,7 +387,7 @@ input[type="color"]::-webkit-color-swatch {
   /*margin-right: 15px;*/
 }
 
-.testinomials .container {
+.testimonials .container {
   margin: 0 auto;
   max-width: 500px;
 }
