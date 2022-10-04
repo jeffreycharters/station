@@ -179,22 +179,14 @@ li {
 li::before {
   content: counter(my-awesome-counter);
   background: #662974;
-  width: 2rem;
-  height: 2rem;
+  align-items: center;
   border-radius: 50%;
-  /*display: inline-block;*/
-  line-height: 2rem;
   color: white;
-  text-align: center;
-  margin-right: 0.5rem;
-}
-
-ol ol li::before {
-  background: #de51ff;
-}
-
-ol ol ol li::before {
-  background: #ee9eff;
+  display: inline-flex;
+  height: 24px;
+  justify-content: center;
+  margin-right: 10px;
+  width: 24px;
 }
 
 /* Styles for color form */
@@ -338,6 +330,7 @@ input[type="color"]::-webkit-color-swatch {
   #list,
   #list2 {
     align-self: center;
+    width: 95%;
   }
 
   #list2 {
