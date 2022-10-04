@@ -1,6 +1,6 @@
-:root{
-  --bgc:black;
-  --content:white;
+:root {
+  --bgc: black;
+  --content: white;
 }
 /* Base Styles */
 html {
@@ -16,23 +16,23 @@ body {
 
 /* Editing Scrollbar */
 
-::-webkit-scrollbar{
-  width:2em;
+::-webkit-scrollbar {
+  width: 2em;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   border-radius: 100vw;
   margin-block: 0.5em;
 }
 
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(blue,darkmagenta, red);
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(blue, darkmagenta, red);
   border: 0.25em solid var(--content);
   border-radius: 100vw;
 }
 
-::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(rgb(51, 51, 255),magenta,rgb(251, 52, 52));
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(rgb(51, 51, 255), magenta, rgb(251, 52, 52));
 }
 
 /* Container Styles */
@@ -53,6 +53,7 @@ h1 {
   background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* Style for hero section */
@@ -126,12 +127,13 @@ h1 {
 
 /* Universal style for h2 */
 h2 {
-  background: linear-gradient(to right,
-      #fff 20%,
-      rgb(205, 80, 247) 40%,
-      rgb(84, 164, 255) 60%,
-      /* #43d3ff 80%, */
-      rgb(255, 255, 255) 80%);
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    rgb(205, 80, 247) 40%,
+    rgb(84, 164, 255) 60%,
+    /* #43d3ff 80%, */ rgb(255, 255, 255) 80%
+  );
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -174,6 +176,7 @@ ol {
 li {
   counter-increment: my-awesome-counter;
   margin: 0.25rem;
+  position: relative;
 }
 
 li::before {
@@ -182,11 +185,15 @@ li::before {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  /*display: inline-block;*/
+  display: inline-block;
   line-height: 2rem;
   color: white;
   text-align: center;
-  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  left: -2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 ol ol li::before {
@@ -292,12 +299,13 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .light-mode-gradient {
-  background: linear-gradient(to right,
-      rgb(43, 42, 42) 20%,
-      rgb(205, 80, 247) 40%,
-      rgb(84, 164, 255) 60%,
-      /* #43d3ff 80%, */
-      rgb(49, 49, 49) 80%);
+  background: linear-gradient(
+    to right,
+    rgb(43, 42, 42) 20%,
+    rgb(205, 80, 247) 40%,
+    rgb(84, 164, 255) 60%,
+    /* #43d3ff 80%, */ rgb(49, 49, 49) 80%
+  );
   background-size: 200% auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -314,7 +322,6 @@ input[type="color"]::-webkit-color-swatch {
   .container {
     max-width: 100%;
   }
-
 
   .hero-section {
     height: 80vh;
@@ -396,4 +403,3 @@ input[type="color"]::-webkit-color-swatch {
   margin: 0 auto;
   max-width: 500px;
 }
-
