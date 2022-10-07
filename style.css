@@ -62,88 +62,98 @@ h1 {
 
 /* Style for hero section */
 .hero-section {
+  width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+.hero-content {
+  width: 50%;
+  position: relative;
 }
 
-.hero-section .hero-content {
-  display: grid;
-  margin-bottom: 12rem;
-}
-
-.hero-section,
-.hero-content > * {
-  grid-column: 1;
-}
-
-.hero-content .hero-title {
-  font-family: "PP Mondwest";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 160px;
-  line-height: 173px;
-  text-transform: uppercase;
-  opacity: 0.88;
-
-  max-width: 1125px;
-  margin-bottom: 0;
-  grid-row: 1;
-}
-
-.hero-content .hero-subtitle {
-  font-family: "Didact Gothic";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: #ffffff;
-  opacity: 0.72;
-
-  max-width: 468px;
-  justify-self: end;
-  align-self: center;
-  grid-row: 1 / span 2;
-}
-
-.hero-content .hero-button {
-  font-family: "Didact Gothic";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 31px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 120px 52px;
-
-  color: #ffffff;
-  background: linear-gradient(
-    152.12deg,
-    rgba(255, 255, 255, 0.18) 4.08%,
-    rgba(255, 255, 255, 0) 82.7%
-  );
-  border: 1px solid #ffffff;
-  backdrop-filter: blur(5px);
-  border-radius: 200px;
-  grid-row: 2;
-  justify-self: center;
-  align-self: end;
-  grid-row: 1 / span 2;
-  transform: rotate(-30deg);
-  z-index: 2;
-  margin: 2rem 0 2rem 20rem;
-}
-
-.hero-section .hero-content .image {
-  align-self: end;
+.hero-section svg {
+  position: absolute;
   z-index: 1;
-  grid-row: 2;
-  margin-top: -8rem;
-  margin-left: 8rem;
+}
+.hero-section svg circle {
+  fill: #00b3b3;
 }
 
-.hero-section .hero-content .image img {
-  max-width: 100%;
+.hero-svg {
+  top: -20px;
+  left: -80px;
+}
+.hero-content .hero-title {
+  position: relative;
+  z-index: 2;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-description {
+  margin: 24px 0;
+}
+
+.hero-description p {
+  font-family: "Didact Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.hero-btns a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 12px 32px;
+  border: 2px solid #141414;
+  border-radius: 5px;
+  margin: 0;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+.hero-btns .hero-button {
+  background: #141414;
+  color: #fff;
+  margin: 0;
+}
+.hero-btns .hero-button--outline {
+  background: inherit;
+  color: #141414;
+  border: 2px solid #141414;
+}
+.hero-button:hover,
+.hero-button--outline:hover {
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  border-color: #cf23cf;
+  color: #fff;
+}
+
+.hero-image {
+  width: 40%;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-svg--second {
+  bottom: 0;
+  left: -100px;
+  z-index: 1;
 }
 
 /* Style for about section */
@@ -447,20 +457,6 @@ input[type="color"]::-webkit-color-swatch {
   display: flex;
   flex-direction: column;
   align-items: space-between;
-}
-
-/*.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}*/
-
-.container img {
-  /*float: left;
-  margin-right: 20px;*/
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
 }
 
 .container span {
