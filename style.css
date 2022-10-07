@@ -1,4 +1,3 @@
-
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 @font-face {
@@ -6,10 +5,9 @@
   src: url(./assets/fonts/62bf127eaeec3d3029d770ba_PPMondwest-Regular.otf);
 }
 
-
-:root{
-  --bgc:black;
-  --content:white;
+:root {
+  --bgc: black;
+  --content: white;
 }
 
 /* Base Styles */
@@ -26,23 +24,23 @@ body {
 
 /* Editing Scrollbar */
 
-::-webkit-scrollbar{
-  width:2em;
+::-webkit-scrollbar {
+  width: 2em;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   border-radius: 100vw;
   margin-block: 0.5em;
 }
 
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(blue,darkmagenta, red);
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(blue, darkmagenta, red);
   border: 0.25em solid var(--content);
   border-radius: 100vw;
 }
 
-::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(rgb(51, 51, 255),magenta,rgb(251, 52, 52));
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(rgb(51, 51, 255), magenta, rgb(251, 52, 52));
 }
 
 /* Container Styles */
@@ -59,6 +57,7 @@ h1 {
   background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* Style for hero section */
@@ -176,7 +175,7 @@ h2 {
 
 /* Styles for favourites section */
 .fave-container {
-  margin-top: 2em;
+  margin-block: 2em;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -189,11 +188,6 @@ h2 {
 #list,
 #list2 {
   width: 50%;
-  align-self: center;
-}
-
-#list2 {
-  margin-top: 2rem;
 }
 
 ol {
@@ -214,19 +208,23 @@ li {
   align-self: center;
   counter-increment: my-awesome-counter;
   margin: 0.25rem;
+  position: relative;
 }
 
 li::before {
   content: counter(my-awesome-counter);
   background: #662974;
-  align-items: center;
   border-radius: 50%;
+  display: grid;
+  place-content: center;
+  width: 20px;
+  height: 20px;
   color: white;
-  display: inline-flex;
-  height: 24px;
-  justify-content: center;
-  margin-right: 10px;
-  width: 24px;
+  font-size: 1.2rem;
+  position: absolute;
+  left: -2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Testimonials */
@@ -395,20 +393,18 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
-
 /* Large Tablet Styles */
 @media screen and (max-width: 790px) {
   .hero-content .hero-title {
     font-size: 20vw;
     line-height: 100%;
-
+  }
   /* I put the list items as column for better visibility */
 
   #list,
   #list2 {
     align-self: center;
     width: 95%;
-
   }
 
   .hero-section .hero-content .image,
@@ -432,12 +428,9 @@ input[type="color"]::-webkit-color-swatch {
     align-self: center;
   }
 
-
   .hero-section .hero-content .image img {
     max-width: 80%;
   }
-}
-
 }
 
 .testinomials {
@@ -479,4 +472,3 @@ input[type="color"]::-webkit-color-swatch {
   margin: 0 auto;
   max-width: 500px;
 }
-
