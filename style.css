@@ -175,7 +175,7 @@ h2 {
 
 /* Styles for favourites section */
 .fave-container {
-  margin-top: 2em;
+  margin-block: 2em;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -188,11 +188,6 @@ h2 {
 #list,
 #list2 {
   width: 50%;
-  align-self: center;
-}
-
-#list2 {
-  margin-top: 2rem;
 }
 
 ol {
@@ -219,13 +214,13 @@ li {
 li::before {
   content: counter(my-awesome-counter);
   background: #662974;
-  align-items: center;
   border-radius: 50%;
-  display: inline-block;
-  line-height: 2rem;
+  display: grid;
+  place-content: center;
+  width: 20px;
+  height: 20px;
   color: white;
-  text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: absolute;
   left: -2.5rem;
   top: 50%;
