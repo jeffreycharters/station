@@ -13,6 +13,7 @@
 /* Base Styles */
 html {
   font-size: 62%;
+  overflow-x: hidden;
 }
 
 body {
@@ -383,31 +384,20 @@ input[type="color"]::-webkit-color-swatch {
   color: #238bf3;
 }
 
-/* Mobile Styles*/
-@media screen and (max-width: 480px) /* .embed { height: 360px; width: 480px; } */ {
-  .container {
-    max-width: 100%;
-  }
-}
-
-/* Small Tablet Styles */
-@media screen and (max-width: 550px) /* .embed { height: 360px; width: 480px; } */ {
-  .container {
-    max-width: 100%;
-  }
-  /* I chose 550px because the list breaks at around that pixel size. */
-
-  .fave-container {
+/* Large Tablet Styles */
+@media screen and (max-width: 820px) {
+  .hero-section {
     flex-direction: column;
+    height: auto;
+    padding-block: 24px;
+    gap: 40px;
     text-align: center;
   }
-}
-
-/* Large Tablet Styles */
-@media screen and (max-width: 790px) {
-  .hero-content .hero-title {
-    font-size: 20vw;
-    line-height: 100%;
+  .hero-section > div {
+    width: 70%;
+  }
+  .hero-btns {
+    justify-content: center;
   }
   /* I put the list items as column for better visibility */
 
@@ -423,23 +413,39 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
-/* Laptop Styles */
-@media all and (max-width: 1350px) {
-  .hero-section,
-  .hero-content > * {
-    grid-column: auto;
-    grid-row: auto;
+/* Small Tablet Styles */
+@media screen and (max-width: 550px) /* .embed { height: 360px; width: 480px; } */ {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  /* I chose 550px because the list breaks at around that pixel size. */
+
+  .fave-container {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .hero-content .hero-button,
-  .hero-content .hero-subtitle {
-    grid-row: auto;
-    justify-self: center;
-    align-self: center;
+  .hero-section > div {
+    width: 100%;
   }
 
-  .hero-section .hero-content .image img {
-    max-width: 80%;
+  .hero-svg {
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Mobile Styles*/
+@media screen and (max-width: 400px) /* .embed { height: 360px; width: 480px; } */ {
+  .hero-btns {
+    flex-direction: column;
+    gap: 12px;
+    width: 70%;
+    margin: auto;
+  }
+  .hero-btns a {
+    width: 100%;
   }
 }
 
@@ -457,6 +463,10 @@ input[type="color"]::-webkit-color-swatch {
   display: flex;
   flex-direction: column;
   align-items: space-between;
+}
+.pippi {
+  width: 400px;
+  max-width: 90%;
 }
 
 .container span {
