@@ -134,6 +134,13 @@ h1 {
   margin: 2rem 0 2rem 20rem;
 }
 
+.hero-button:hover, .hero-button:focus {
+  background:rgba(181, 117, 202, 0.24);
+  color:rgb(248, 246, 86);
+  border-color:rgb(248, 246, 86);
+  font-weight: bolder;
+}
+
 .hero-section .hero-content .image {
   align-self: end;
   z-index: 1;
@@ -401,7 +408,7 @@ input[type="color"]::-webkit-color-swatch {
   }
   /* I put the list items as column for better visibility */
 
-  #list,
+  #list, 
   #list2 {
     align-self: center;
     width: 95%;
