@@ -76,15 +76,9 @@ h1 {
   position: relative;
 }
 
-.hero-section svg {
+.hero-svg {
   position: absolute;
   z-index: 1;
-}
-.hero-section svg circle {
-  fill: #00b3b3;
-}
-
-.hero-svg {
   top: -20px;
   left: -80px;
 }
@@ -116,7 +110,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 12px 32px;
-  border: 2px solid #141414;
+  border: 2px solid #292929;
   border-radius: 5px;
   margin: 0;
   text-decoration: none;
@@ -124,14 +118,14 @@ h1 {
   transition-property: background-color;
 }
 .hero-btns .hero-button {
-  background: #141414;
+  background: #292929;
   color: #fff;
   margin: 0;
 }
 .hero-btns .hero-button--outline {
   background: inherit;
-  color: #141414;
-  border: 2px solid #141414;
+  color: #fff;
+  border: 2px solid #292929;
 }
 .hero-button:hover,
 .hero-button--outline:hover {
@@ -151,10 +145,13 @@ h1 {
   z-index: 2;
 }
 
-.hero-svg--second {
+.hero-image .hero-svg--second {
+  position: absolute;
+  z-index: 1;
   bottom: 0;
   left: -100px;
   z-index: 1;
+  width: 200px;
 }
 
 /* Style for about section */
