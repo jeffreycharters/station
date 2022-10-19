@@ -44,6 +44,9 @@ icons.forEach(function (e) {
       root.style.setProperty('--content','black');
       
       document.querySelector("body").classList.add("light-mode");
+      
+      document.querySelector(".hero-button--outline").classList.add("light-mode");
+
     } else {
       container.classList.remove("light-mode");
       links[1].style.color = null;
@@ -53,7 +56,9 @@ icons.forEach(function (e) {
       links.forEach((e) => e.classList.remove("link-light-mode"));
       document.querySelector("body").classList.remove("light-mode");
       root.style.setProperty('--bgc','black');
-      root.style.setProperty('--content','white');
+      root.style.setProperty('--content', 'white');
+      
+      document.querySelector(".hero-button--outline").classList.remove("light-mode");
     }
   });
 });
