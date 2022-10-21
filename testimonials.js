@@ -5,7 +5,7 @@
  */
 const testimonials = [
   {
-    name: "1Chris Fox",
+    name: "Chris Fox",
     position: "CEO, Mighty Schools",
     testimonial: "John Doe saved us from a web disaster.",
   },
@@ -22,23 +22,12 @@ const testimonials = [
     testimonial:
       "This is the first open source project I've ever worked on. I was nervous at first, but it's really been fun! My first pull request was to change the font for the page. You should definitely jump in, this is a very friendly environment where we are all learning. 😊",
   },
+
   {
-    name: "Micha",
-    position: "Station Contributor",
+    name: "publikphigor",
+    position: "Front-end Developer & Open-source Contributor",
     testimonial:
-      "This is the first open source project I've ever worked on. I was nervous at first, but it's really been fun! My first pull request was to change the font for the page. You should definitely jump in, this is a very friendly environment where we are all learning. 😊",
-  },
-  {
-    name: "Micha",
-    position: "Station Contributor",
-    testimonial:
-      "This is the first open source project I've ever worked on. I was nervous at first, but it's really been fun! My first pull request was to change the font for the page. You should definitely jump in, this is a very friendly environment where we are all learning. 😊",
-  },
-  {
-    name: "6Micha",
-    position: "Station Contributor",
-    testimonial:
-      "This is the first open source project I've ever worked on. I was nervous at first, but it's really been fun! My first pull request was to change the font for the page. You should definitely jump in, this is a very friendly environment where we are all learning. 😊",
+      "I like the fact that I can collaborate with other developers across the world. I also like that my PRs are getting merged!",
   },
 ];
 
@@ -47,7 +36,7 @@ const sliderContainer = document.querySelector(".slider");
 const btnLeft = document.querySelector(".slider--prev");
 const btnRight = document.querySelector(".slider--next");
 let counter = 1;
-let slideSize;
+let slideSize, slides;
 
 /**=================== FUNCTIONS ===================  */
 // Generate each slide using the objects in the testimonials array and add them as a child of the slider.
@@ -67,11 +56,10 @@ function addSlides() {
   });
 }
 
+// create a clone of the last slide and the first slide
 function cloneSlides() {
-  // create a clone of the last slide and the first slide
   testimonials.forEach((el, i, arr) => {
     if (i === 0) {
-      console.log(1);
       let firstClone = `
         <div class="slide firstClone">
             <div class="slide-inner">
@@ -100,7 +88,7 @@ function cloneSlides() {
 
 // Dynamically set the size of the slider and slides. Each slide's width is an equal fraction of the slider.
 function setSlideSizes() {
-  const slides = document.querySelectorAll(".slide");
+  slides = document.querySelectorAll(".slide");
   const sliderSize = 100 * testimonials.length;
   slideSize = 100 / testimonials.length;
   sliderContainer.style.width = `${sliderSize}%`;
@@ -110,7 +98,7 @@ function setSlideSizes() {
 }
 
 function nextSlide() {
-  if (counter >= testimonials.length - 1) return;
+  if (counter >= slides.length - 1) return;
   counter++;
   sliderContainer.style.transition = `transform 0.4s ease-in-out`;
   sliderContainer.style.transform = `translateX(-${slideSize * counter}%)`;
@@ -123,16 +111,20 @@ function prevSlide() {
   sliderContainer.style.transform = `translateX(-${slideSize * counter}%)`;
 }
 
-addSlides();
-cloneSlides();
-setSlideSizes();
-sliderContainer.style.transform = `translateX(-${slideSize * counter}%)`;
+function init() {
+  addSlides();
+  cloneSlides();
+  setSlideSizes();
+  // move to the first  slide onload
+  sliderContainer.style.transform = `translateX(-${slideSize * counter}%)`;
+}
+init();
 
 /**=================== EVENT LISTENERS ===================  */
 btnLeft.addEventListener("click", prevSlide);
 btnRight.addEventListener("click", nextSlide);
 
-// loop back to first slide
+// loop back to first/last slide
 sliderContainer.addEventListener("transitionend", () => {
   if (slides[counter].classList.contains("lastClone")) {
     sliderContainer.style.transition = "none";
