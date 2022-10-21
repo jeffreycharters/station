@@ -17,6 +17,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css">
+
+  <!-- Local CSS -->
   <link rel="stylesheet" href="style.css">
   
   <title>Station - A STTN Production</title>
@@ -97,9 +103,27 @@
       </div>
     </section>
 
-<section class="testinomials">
-  <h2>Testimonials section</h2>
-
+<section class="testimonials">
+  <h2 class="subheading">Testimonials section</h2>
+ 
+  
+  <div class="slider-controls">
+    <i class="fa-solid fa-circle-arrow-left slider-control slider--prev"></i>
+    <i class="fa-solid fa-circle-arrow-right slider-control slider--next"></i>
+    <!-- <ion-icon name="arrow-dropleft" class="slider-control slider--prev"></ion-icon>
+    <ion-icon name="arrow-dropright" class="slider-control slider--next"></ion-icon> -->
+  </div>
+  
+  <div class="slider">
+     <!-- THIS IS JUST A PLACEHOLDER ===> Edit the testimonial.js file to add a new testimonial. Create a new object in the array of testimonials with the format. -->
+    <div class="slide">
+      <h2 class="testminonial_name">John Doe</h2>
+      <h3 class="testimonial_post">CEO, Havabi</h3>
+      <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quaerat assumenda esse aliquam amet accusamus vel distinctio consectetur illum officiis.</p>
+    </div>
+  </div>
+  
+<!-- 
   <div class="test-container">
     <div>
       <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
@@ -123,7 +147,7 @@
       <p><span>Micha</span> - STaTioN contributor</p>
       </div>
       <p class="testimonial-text">"This is the first open source project I've ever worked on. I was nervous at first, but it's really been fun! My first pull request was to change the font for the page. You should definitely jump in, this is a very friendly environment where we are all learning. 😊"</p>
-  </div>
+  </div> -->
 </section>
 
 
@@ -170,8 +194,11 @@
     </path>
   </svg>
 
+
+  <script type="text/javascript" src="script.js"></script>
+  <script src="testimonials.js"></script>
+
+  <!-- Ionicons -->
+  <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
 </body>
-
 </html>
-
-<script type="text/javascript" src="script.js"></script>

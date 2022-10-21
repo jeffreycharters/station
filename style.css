@@ -243,35 +243,54 @@ li::before {
 }
 
 /* Testimonials */
-.testinomials {
-  background: #00b3b3;
+.testimonials {
+  width: 100%;
+  padding-block: 100px;
+  position: relative;
 }
-
-.testinomials .container {
-  margin: 0 auto;
+.testimonials .subheading {
+  text-align: center;
+}
+.testimonials .slider-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.testimonials .slider-control {
+  color: var(--content);
+  display: inline-block;
+  font-size: 32px;
+  cursor: pointer;
+}
+.testimonials .slider--prev {
+  margin-right: 14px;
+}
+.slider {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.slide {
+  flex-shrink: 0;
+  margin: 0;
+  padding-inline: 24px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.slide-inner {
   max-width: 500px;
+  margin: 0 auto;
 }
-
-.testinomials .container {
-  border-radius: 5px;
-  padding: 16px;
+.testminonial_name {
+  background: none;
+  -webkit-text-fill-color: var(--content);
+  color: var(--content);
+  font-size: 2.5rem;
+  margin: 0;
 }
-
-.testinomials .container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.testinomials .container img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.testinomials .container span {
-  font-size: 20px;
-  margin-right: 15px;
+.testimonial_post {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 /* Styles for color form */
@@ -455,32 +474,7 @@ input[type="color"]::-webkit-color-swatch {
 
 }
 
-.testinomials {
-  background: #00b3b3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.test-container {
-  border-radius: 5px;
-  padding: 16px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-}
-.pippi {
-  width: 400px;
-  max-width: 90%;
-}
-
 .container span {
   font-size: 24px;
   /*margin-right: 15px;*/
-}
-
-.testimonials .container {
-  margin: 0 auto;
-  max-width: 500px;
 }
