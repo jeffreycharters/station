@@ -251,15 +251,12 @@ li::before {
 }
 .testimonials .slider-control {
   color: var(--content);
-  font-size: 64px;
-  width: 32px;
+  display: inline-block;
+  font-size: 32px;
   cursor: pointer;
 }
 .testimonials .slider--prev {
-  left: 0;
-}
-.testimonials .slider--next {
-  right: 0;
+  margin-right: 14px;
 }
 .slider {
   height: auto;
