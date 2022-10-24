@@ -7,14 +7,12 @@ window.addEventListener("DOMContentLoaded", (load) => {
   localStorage.setItem("counter", (visit += 1));
 });
 
-function func()
-{
-  document.getElementById('embed').style.display='inline-block';
-  document.getElementById('h1').scrollIntoView();
+function func() {
+  document.getElementById("embed").style.display = "inline-block";
+  document.getElementById("h1").scrollIntoView();
   new Audio("epic.mp3").play();
-  document.getElementById('plus').style.display='none';
+  document.getElementById("plus").style.display = "none";
 }
-
 
 let emoji =
   "😄🙃🤪🤩🤓🤔🤨🧐🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐🤓🤩🤪🤨🤔🤯🤠🥳🤫🤭🧐";
@@ -40,41 +38,42 @@ icons.forEach(function (e) {
       links.forEach((e) => e.classList.add("link-light-mode"));
       links[1].style.color = "#FA7070";
       links[3].style.color = "#FA7070";
-      root.style.setProperty('--bgc','white');
-      root.style.setProperty('--content','black');
-      
-      document.querySelector("body").classList.add("light-mode");
-      
-      document.querySelector(".hero-button--outline").classList.add("light-mode");
+      root.style.setProperty("--bgc", "white");
+      root.style.setProperty("--content", "black");
 
+      document.querySelector("body").classList.add("light-mode");
+
+      document
+        .querySelector(".hero-button--outline")
+        .classList.add("light-mode");
     } else {
       container.classList.remove("light-mode");
       links[1].style.color = null;
       links[3].style.color = null;
-      
+
       title.classList.remove("light-mode-gradient");
       links.forEach((e) => e.classList.remove("link-light-mode"));
       document.querySelector("body").classList.remove("light-mode");
-      root.style.setProperty('--bgc','black');
-      root.style.setProperty('--content', 'white');
-      
-      document.querySelector(".hero-button--outline").classList.remove("light-mode");
+      root.style.setProperty("--bgc", "black");
+      root.style.setProperty("--content", "white");
+
+      document
+        .querySelector(".hero-button--outline")
+        .classList.remove("light-mode");
     }
   });
 });
-
 
 // change form bg color
 
 const colorForm = document.getElementById("color-form");
 const colorPicker = document.getElementById("color-picker");
-const favoriteHex = document.getElementById("favorite-hex")
+const favoriteHex = document.getElementById("favorite-hex");
 
-colorForm.addEventListener("submit", function changeColor(e){
+colorForm.addEventListener("submit", function changeColor(e) {
   e.preventDefault();
   colorForm.style.backgroundColor = colorPicker.value;
   favoriteHex.innerHTML = `
     Your favorite color has the hex code: ${colorPicker.value}
   `;
-  
 });
