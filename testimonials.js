@@ -29,13 +29,14 @@ const testimonials = [
     testimonial:
       "I like the fact that I can collaborate with other developers across the world. I also like that my PRs are getting merged!",
   },
-];
+
 
 {  name: "Christine",
     position: "Station Contributor",
     testimonial:
       "I haven't heard about Open Source Projects until Micha introduced them to me in Scrimba's Discord server. I was hesistant at first because I thought you had to use HTML and other languages to contribute, but then I noticed Markdown could be used, so I decided to give it a chance! My first pull request was to add my name to the Contributors file. Since then, I've joined other organizations (I even got a Pull Shark badge! 😊).  If you're new to Open Source projects and want to join a judgement-free community, this is the place to start!",
   },
+  ];
 
 /**=================== SELECTORS ===================  */
 const sliderContainer = document.querySelector(".slider");
