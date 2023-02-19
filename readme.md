@@ -45,7 +45,7 @@ The following people are willing to help you via Twitter as well:
 - Jeffrey [@radridersdesign](https://twitter.com/radridersdesign)
 - Michaella [@NotMichaella](https://twitter.com/NotMichaella)
 - Slim [@slim-codes](https://twitter.com/slimcodes)
-- Chrissy [@CodesChrissy](https://twitter.com/CodesChrissy
+- Chrissy [@CodesChrissy](https://twitter.com/CodesChrissy)
 
 👆 Feel free to add your info here and create a Pull Request to get added!
 
